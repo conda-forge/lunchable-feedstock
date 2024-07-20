@@ -1,5 +1,5 @@
 {% set name = "lunchable" %}
-{% set version = "1.3.2" %}
+{% set version = "1.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lunchable-{{ version }}.tar.gz
-  sha256: 4fb97425dfc7e15c76789cd1219826412798c11dd0d07ee3583548873f9755d9
+  sha256: d83640d83868f5f59648bdded9cbcd06445b5198a9f087fe59dd82587c051d0e
 
 build:
   entry_points:
