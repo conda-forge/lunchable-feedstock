@@ -147,6 +147,3 @@ Feedstock Maintainers
 
 * [@juftin](https://github.com/juftin/)
 
-
-<!-- dummy commit to enable rerendering -->
-
