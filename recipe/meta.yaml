@@ -14,15 +14,15 @@ build:
     - lunchable = lunchable._cli:cli
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8,<4.0
+    - python {{ python_min }}
     - hatchling
     - pip
   run:
-    - python >=3.8,<4.0
+    - python >={{ python_min }},<4.0
     - click >=8.0.1
     - pydantic >=2,<3
     - rich >=10.0.0
@@ -38,6 +38,7 @@ test:
     - lunchable --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   summary: A simple Python SDK around the Lunch Money Developer API
